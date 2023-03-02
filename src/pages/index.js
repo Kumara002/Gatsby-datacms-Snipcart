@@ -44,12 +44,7 @@ const Home = () => (
           {data.products.edges.map(({ node: product }) => (
             <div className="Catalogue__item" key={product.id}>
               <div
-                className="Product snipcart-add-item"
-                data-item-id={product.id}
-                data-item-price={product.price}
-                data-item-image={product.image.url}
-                data-item-name={product.name}
-                data-item-url={`/`}
+               
               >
                 <div className="Product__image">
                   <Img sizes={product.image.sizes} />
@@ -57,9 +52,15 @@ const Home = () => (
                 <div className="Product__details">
                   <div className="Product__name">
                     {product.name}
-                    <div className="Product__price">{product.price}€</div>
+                    <div className="Product__price">Rs.{product.price}</div>
                   </div>
-                  <span className="Product__buy">Buy now</span>
+                  <button
+                   className="Product snipcart-add-item"
+                   data-item-id={product.id}
+                   data-item-price={product.price}
+                   data-item-image={product.image.url}
+                   data-item-name={product.name}
+                   data-item-url={`http://localhost:8000/`}>Add to card</button>
                 </div>
               </div>
             </div>

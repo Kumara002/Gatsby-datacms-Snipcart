@@ -73,26 +73,26 @@
   position: relative;
   font-weight: bold;
 
-  &:hover {
-    text-decoration: underline;
+  // &:hover {
+  //   text-decoration: underline;
 
-    &:before {
-      content: "Yes now";
-      position: absolute;
-      top: -10px;
-      left: 60%;
-      white-space: nowrap;
-      font-family: "times new roman", times, serif;
-      font-weight: normal;
-      font-style: italic;
-      mix-blend-mode: difference;
-      text-transform: lowercase;
-      text-decoration: overline;
-      color: #00efff;
-      font-size: 2em;
-      animation: blink 6s steps(4, end) infinite alternate-reverse;
-    }
-  }
+  //   &:before {
+  //     content: "Yes now";
+  //     position: absolute;
+  //     top: -10px;
+  //     left: 60%;
+  //     white-space: nowrap;
+  //     font-family: "times new roman", times, serif;
+  //     font-weight: normal;
+  //     font-style: italic;
+  //     mix-blend-mode: difference;
+  //     text-transform: lowercase;
+  //     text-decoration: overline;
+  //     color: #00efff;
+  //     font-size: 2em;
+  //     animation: blink 6s steps(4, end) infinite alternate-reverse;
+  //   }
+  // }
 }
 
 @keyframes cross-1 {
@@ -117,16 +117,16 @@
   }
 }
 
-@keyframes blink {
-  $steps: 20;
+// @keyframes blink {
+//   $steps: 20;
 
-  @for $i from 0 through $steps {
-    #{abs(percentage($i * calc(1/$steps) + calc((15 - random(30)) / 15) * calc(1/$steps)))} {
-      @if ($i % 3 == 0) {
-        opacity: 1;
-      } @else {
-        opacity: 0;
-      }
-    }
-  }
-}
+//   @for $i from 0 through $steps {
+//     #{abs(percentage($i * calc(1/$steps) + calc((15 - random(30)) / 15) * calc(1/$steps)))} {
+//       @if ($i % 3 == 0) {
+//         opacity: 1;
+//       } @else {
+//         opacity: 0;
+//       }
+//     }
+//   }
+// }

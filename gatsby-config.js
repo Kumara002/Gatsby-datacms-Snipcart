@@ -2,7 +2,7 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    siteName: 'My Shop',
+    siteName: 'Kumara Game Store',
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -10,7 +10,7 @@ module.exports = {
       resolve: `gatsby-source-datocms`,
       options: {
         apiToken:
-          process.env.DATO_READONLY_API_KEY || '1b2fe1bfc8abf2e08343a75e444b4d',
+          process.env.DATO_READONLY_API_KEY || '317fe2f20d8c7e31e9567cfe3f627e',
       },
     },
     {
@@ -18,7 +18,7 @@ module.exports = {
       options: {
         publicApiKey:
           process.env.SNIPCART_PUBLIC_API_KEY ||
-          'OWE3MmZmMjQtNTk3Yi00OThhLWEwMmUtZDY4ZWM4NzIwYzZiNjM2NjM0Mzc1NzE0MTUwNzI1',
+          'MjZiYzA3OWUtNDU0OS00NTZjLWJlZmEtMmI5YmY0OWFhMjM0NjM4MTMwOTIxOTM4NDUxMTYy',
         autopop: true,
       },
     },
