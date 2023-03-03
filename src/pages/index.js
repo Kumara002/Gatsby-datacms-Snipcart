@@ -55,7 +55,7 @@ const Home = () => (
                     <div className="Product__price">Rs.{product.price}</div>
                   </div>
                   <button
-                   className="Product_snipcart-add-item"
+                   className="Product snipcart-add-item"
                    data-item-id={product.id}
                    data-item-price={product.price}
                    data-item-image={product.image.url}
