@@ -53,7 +53,7 @@ const Home = () => (
                 <div className="Product__details">
                   <div className="Product__name">
                     {product.name}
-                    <div className="Product__price">Rs.{product.price}</div>
+                    <div className="Product__price">${product.price}</div>
                   </div>
                   <button
                    className="Product snipcart-add-item"
