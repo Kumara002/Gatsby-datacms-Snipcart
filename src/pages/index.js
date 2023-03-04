@@ -61,7 +61,6 @@ const Home = () => (
                    data-item-price={product.price}
                    data-item-image={product.image.url}
                    data-item-name={product.name}
-                   data-item-quantity={product.quantity}
                    data-item-url={`https://gatsbydatacmssnipcartmaind7f7.gatsbyjs.io/`}>Add to card</button>
                 </div>
               </div>
