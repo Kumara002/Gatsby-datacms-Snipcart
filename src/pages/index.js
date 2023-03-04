@@ -13,6 +13,7 @@ const Home = () => (
               id
               name
               price
+              quantity
               image {
                 url
                 sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
@@ -55,11 +56,12 @@ const Home = () => (
                     <div className="Product__price">Rs.{product.price}</div>
                   </div>
                   <button
-                   className="Product snipcart-add-item"
+                   className="Product_snipcart-add-item"
                    data-item-id={product.id}
                    data-item-price={product.price}
                    data-item-image={product.image.url}
                    data-item-name={product.name}
+                   data-item-quantity={product.quantity}
                    data-item-url={`https://gatsbydatacmssnipcartmaind7f7.gatsbyjs.io/`}>Add to card</button>
                 </div>
               </div>
